@@ -19,9 +19,18 @@ func main() {
 	}
 	var a map[int]int
 	a=make(map[int]int)
-	a[2]=1
-	a[1]=2
-	for c := range a {
+	a[5]=1
+	a[6]=2
+	for i,c := range a {
+		fmt.Println(i)
+		fmt.Println(c)
+	}
+	b:=make(map[string]string)
+	b["name"]="zangsan";
+	b["age"]="11";
+	fmt.Println(b)
+	for i,c:=range b   {
+		fmt.Println(i)
 		fmt.Println(c)
 	}
 
