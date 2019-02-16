@@ -7,6 +7,11 @@ type books struct {
 	author string
 	price float64
 }
+type books1 struct {
+	//结构体嵌套，匿名成员
+	books
+	brief string
+}
 
 func main() {
 	var b books
@@ -15,6 +20,9 @@ func main() {
 	b.price=100
 	fmt.Println(b.title)
 	printBooks(b)
+	var b1 books1
+	b1.brief="描述"
+	fmt.Println(b1.brief)
 }
 func printBooks(books books)  {
 	fmt.Printf(books.title)
