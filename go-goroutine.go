@@ -2,15 +2,16 @@ package main
 
 import (
 	"fmt"
-	"time"
 )
 
 func main() {
-	go Go()
-	time.Sleep(2 * time.Second)
+
+	c:=make(chan bool)
+	go func() {
+		fmt.Println("echo")
+		c<-true
+	}()
+	<-c
 
 }
-func Go() {
-	fmt.Println("GO!")
 
-}
