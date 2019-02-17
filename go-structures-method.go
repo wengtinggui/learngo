@@ -2,30 +2,30 @@ package main
 
 import "fmt"
 
-type a struct {
+type A struct {
 	name string
 }
-type b struct {
+type B struct {
 	name string
 }
 
 func main() {
-	a:=a{}
+	a:=A{}
 	a.name="aa2"
 	a.print()
 	fmt.Println(a.name)
-	b:=b{}
+	b:=B{}
 	b.name="bb2"
 	b.print()
 	fmt.Println(b.name)
 
 }
-func (a *a)print()  {
+func (a *A)print()  {
 	a.name="aa"
 	fmt.Println("aa1")
 
 }
-func (b b)print()  {
+func (b B)print()  {
 	b.name="bb"
 	fmt.Println("bb1")
 
