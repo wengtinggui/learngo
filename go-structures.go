@@ -23,6 +23,10 @@ func main() {
 	var b1 books1
 	b1.brief="描述"
 	fmt.Println(b1.brief)
+	c:=books1{
+		brief:"c描述",
+	}
+	fmt.Println(c.brief)
 }
 func printBooks(books books)  {
 	fmt.Printf(books.title)
