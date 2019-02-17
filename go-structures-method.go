@@ -10,23 +10,23 @@ type B struct {
 }
 
 func main() {
-	a:=A{}
-	a.name="aa2"
+	a := A{}
+	a.name = "aa2"
 	a.print()
 	fmt.Println(a.name)
-	b:=B{}
-	b.name="bb2"
+	b := B{}
+	b.name = "bb2"
 	b.print()
 	fmt.Println(b.name)
 
 }
-func (a *A)print()  {
-	a.name="aa"
+func (a *A) print() {
+	a.name = "aa"
 	fmt.Println("aa1")
 
 }
-func (b B)print()  {
-	b.name="bb"
+func (b B) print() {
+	b.name = "bb"
 	fmt.Println("bb1")
 
 }
